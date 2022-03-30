@@ -1,0 +1,12 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+printf "\n"
+printf "=== Run test ===\n"
+printf "\n"
+npm run test
+printf "\n"
+printf "=== Run lint and format ===\n"
+printf "\n"
+npx lint-staged
+printf "\n"
